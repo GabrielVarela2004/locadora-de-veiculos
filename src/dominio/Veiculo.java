@@ -22,6 +22,38 @@ public abstract class Veiculo {
         this.clienteAtual = null;
     }
 
+    public String getPlaca() {
+        return placa;
+    }
+
+    public String getModelo() {
+        return modelo;
+    }
+
+    public int getAno() {
+        return ano;
+    }
+
+    public double getValorDiariaBase() {
+        return valorDiariaBase;
+    }
+
+    public Cliente getClienteAtual() {
+        return clienteAtual;
+    }
+
+    public StatusVeiculo getStatus() {
+        return status;
+    }
+
+    public void setClienteAtual(Cliente clienteAtual) {
+        this.clienteAtual = clienteAtual;
+    }
+
+    public void setStatus(StatusVeiculo status) {
+        this.status = status;
+    }
+
     @Override
     public String toString() {
         return "Veiculo{" +

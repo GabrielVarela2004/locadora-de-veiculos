@@ -6,7 +6,7 @@ public class Carro extends Veiculo implements Seguravel{
     protected boolean possuiArCondicionado;
 
     public Carro(String placa, String modelo, int ano, double valorDiariaBase, StatusVeiculo status, Cliente clienteAtual, int quantidadePortas, boolean possuiArCondicionado) {
-        super(placa, modelo, ano, valorDiariaBase, status, clienteAtual);
+        super(placa, modelo, ano, valorDiariaBase,status, clienteAtual);
         this.quantidadePortas = quantidadePortas;
         this.possuiArCondicionado = possuiArCondicionado;
     }
@@ -31,5 +31,13 @@ public class Carro extends Veiculo implements Seguravel{
                 "quantidadePortas=" + quantidadePortas +
                 ", possuiArCondicionado=" + possuiArCondicionado +
                 '}';
+    }
+
+    public int getQuantidadePortas() {
+        return quantidadePortas;
+    }
+
+    public boolean isPossuiArCondicionado() {
+        return possuiArCondicionado;
     }
 }
